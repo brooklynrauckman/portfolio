@@ -5,11 +5,12 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "netlify-cli": "^2.25.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-responsive": "8.0.1",
     "react-router-dom": "5.1.2",
-    "react-scripts": "3.0.1",
+    "react-scripts": "^3.3.0",
     "react-text-loop": "2.2.1",
     "scroll-behavior": "0.9.10"
   },
