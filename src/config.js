@@ -11,7 +11,7 @@ const intro = {
 
 const projects = [
   {
-    app: "",
+    app: "https://confident-euler-0c7809.netlify.com/",
     thumbnail:
       "https://images.unsplash.com/photo-1476231682828-37e571bc172f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=400&w=400",
     caption:
@@ -19,7 +19,7 @@ const projects = [
     id: "swaps"
   },
   {
-    app: "",
+    app: "https://competent-rosalind-8f9dcf.netlify.com/",
     thumbnail:
       "https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=400&w=400",
     caption:
