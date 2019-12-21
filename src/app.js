@@ -1,24 +1,25 @@
-//landing page
-
 import React from "react";
-import Heading from "./heading.js";
-import Title from "./title.js";
 import Nav from "./nav.js";
+import Intro from "./intro.js";
+import About from "./about.js";
+import Projects from "./projects.js";
 
-const App = props => {
 
-return (
-  <React.Fragment>
-    <div className="App">
-      <div>
-        <Title />
+const App = () => {
+
+  return(
+    <React.Fragment>
+      <div className="hero">
+        <Nav />
+        <div className="intro">
+          <Intro />
+        </div>
       </div>
-      <div className="pitch">
-        <Heading heading={props.heading.pitch} />
-      </div>
-    </div>
-      <Nav />
-  </React.Fragment>
-)};
+      <About />
+      <Projects />
+    </React.Fragment>
+    );
+  }
+
 
 export default App;

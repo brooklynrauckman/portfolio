@@ -1,23 +1,24 @@
-// textloop used on landing page title
+// textloop used on intro
 
 import React from "react";
 import TextLoop from "react-text-loop";
 
 const Rotate = () => (
   <React.Fragment>
+    <span>Hi, my name is Brooklyn. I am </span>
      <TextLoop interval={1500} mask={true}>
-        <span>develop</span>
-        <span>runn</span>
-        <span>learn</span>
-        <span>organiz</span>
-        <span>hard work</span>
-        <span>teach</span>
-        <span>problem-solv</span>
-        <span>plann</span>
-        <span>team play</span>
-        <span>explor</span>
+        <span>a develop</span>
+        <span>a runn</span>
+        <span>a learn</span>
+        <span>an organiz</span>
+        <span>a hard work</span>
+        <span>a teach</span>
+        <span>a problem-solv</span>
+        <span>a plann</span>
+        <span>a team play</span>
+        <span>an explor</span>
     </TextLoop>{" "}
-      <span className="base">er</span>
+      <span className="base">er.</span>
     </React.Fragment>
 );
 
