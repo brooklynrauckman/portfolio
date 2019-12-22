@@ -4,7 +4,7 @@ import React from "react";
 import TextLoop from "react-text-loop";
 
 const Rotate = () => (
-  <React.Fragment>
+  <div className="rotate">
     <span>Hi, my name is Brooklyn. I am </span>
      <TextLoop interval={1500} mask={true}>
         <span>a develop</span>
@@ -19,7 +19,7 @@ const Rotate = () => (
         <span>an explor</span>
     </TextLoop>{" "}
       <span className="base">er.</span>
-    </React.Fragment>
+    </div>
 );
 
 export default Rotate;

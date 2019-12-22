@@ -6,6 +6,10 @@ a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #F4F4F4;
   color: #252525;
@@ -25,9 +29,18 @@ body {
   max-width: 950px;
 }
 
+.projects {
+  padding-bottom: 1rem;
+}
+
 .hero {
-  background: url("white-texture.jpg") no-repeat center;
+  background-image: linear-gradient(to bottom, transparent, #F4F4F4),
+  url("white-texture.jpg");
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* navigation component */
@@ -37,6 +50,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 950px;
 }
 
 .link:hover, .portfolio-link:hover {
@@ -72,13 +87,17 @@ body {
 }
 
 .title {
-  height: calc(100vh - 6rem);
+  height: calc(100vh - 8rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 425px;
   margin: 0 1rem;
+}
+
+.rotate {
+  text-align: center;
 }
 
 .textloop {
