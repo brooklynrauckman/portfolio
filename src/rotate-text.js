@@ -5,7 +5,7 @@ import TextLoop from "react-text-loop";
 
 const Rotate = () => (
   <div className="rotate">
-    <span>Hi, my name is Brooklyn. I am </span>
+    <span>Hi, my name is Brooklyn. <br /> I am </span>
      <TextLoop interval={1500} mask={true}>
         <span>a develop</span>
         <span>a runn</span>
@@ -13,7 +13,7 @@ const Rotate = () => (
         <span>an organiz</span>
         <span>a hard work</span>
         <span>a teach</span>
-        <span>a problem-solv</span>
+        <span>a problem solv</span>
         <span>a plann</span>
         <span>a team play</span>
         <span>an explor</span>

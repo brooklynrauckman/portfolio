@@ -17,7 +17,7 @@ const projects = [
     thumbnail:
       "../wonder-shot.png",
     caption:
-      "Explore mind-blowing comparisons involving objects in outer space. Add your name to the guest galaxy, and see who else has joined. (Hint: You may need to refresh your page when you visit the site to wake up the database.)",
+      "Explore mind-blowing comparisons involving objects in outer space. Add your name to the guest galaxy, and see who else has joined.",
     tools: "HTML, CSS, JS, React, Node, Express, ElephantSQL, Netlify, Heroku",
     id: "space"
   },

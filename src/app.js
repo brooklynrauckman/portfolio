@@ -4,7 +4,6 @@ import Intro from "./intro.js";
 import About from "./about.js";
 import Projects from "./projects.js";
 
-
 const App = () => {
 
   return(
@@ -15,11 +14,12 @@ const App = () => {
           <Intro />
         </div>
       </div>
-      <About />
-      <Projects />
+      <div className="content">
+        <About />
+        <Projects />
+      </div>
     </React.Fragment>
     );
   }
-
 
 export default App;
