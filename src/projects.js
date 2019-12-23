@@ -21,7 +21,7 @@ return(
       </a>
       {swapsToggle ?
         <div className="project-expand">
-          <a href={swaps.app} className="img-link"><img className="project-img" src={swaps.thumbnail} alt="project thumbnail" /></a>
+          <a href={swaps.app} target="blank" className="img-link"><img className="project-img" src={swaps.thumbnail} alt="project thumbnail" /></a>
           <div className="project-info">
             <p className="project-des">
               {swaps.caption}
@@ -49,7 +49,7 @@ return(
       </a>
       {spaceToggle ?
         <div className="project-expand">
-          <a href={space.app} className="img-link"><img className="project-img" src={space.thumbnail} alt="project thumbnail" /></a>
+          <a href={space.app} target="blank" className="img-link"><img className="project-img" src={space.thumbnail} alt="project thumbnail" /></a>
           <div className="project-info">
             <p className="project-des">
               {space.caption}
@@ -77,7 +77,7 @@ return(
       </a>
       {challengeToggle ?
         <div className="project-expand">
-          <a href={challenge.app} className="img-link"><img className="project-img" src={challenge.thumbnail} alt="project thumbnail" /></a>
+          <a href={challenge.app} target="blank" className="img-link"><img className="project-img" src={challenge.thumbnail} alt="project thumbnail" /></a>
           <div className="project-info">
             <p className="project-des">
               {challenge.caption}
