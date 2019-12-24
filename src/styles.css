@@ -1,3 +1,7 @@
+/* Organization: Positioning, Box model, Typographic, Visual, Misc */
+
+/* universal & general */
+
 * {
   box-sizing: border-box;
 }
@@ -11,60 +15,50 @@ html {
 }
 
 body {
-  background-color: #F4F4F4;
-  color: #252525;
-  font-family: 'Lato', sans-serif;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  background-color: #212121;
 }
 
+/* hero section (contains nav and intro components) */
+
 .hero {
-  background-image: linear-gradient(to bottom, transparent, #F4F4F4),
-  url("white-texture.jpg");
-  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-}
-
-.about,
-.projects {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: calc(100% - 4rem);
-  max-width: 950px;
-  margin: 0 2rem;
-}
-
-.projects {
-  padding-bottom: 3rem;
-  margin-top: 2rem;
+  background-image: url("gray-texture.jpg");
+  background-size: cover;
 }
 
 /* navigation component */
 
 .navBar {
-  padding: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
+  padding: 2rem;
+}
+
+.name {
+  margin-block-start: 0;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.nav-links {
+  position: absolute;
+  top:0;
+  right: 0;
+  margin: 2rem;
+  text-align: right;
 }
 
 .menu-arrow {
@@ -72,9 +66,9 @@ body {
 }
 
 .about-link, .portfolio-link {
-  color: #252525;
   font-size: 1.5rem;
   font-weight: 500;
+  color: #fff;
 }
 
 .about-link {
@@ -86,45 +80,22 @@ body {
   cursor: pointer;
 }
 
-.name {
-  font-size: 1.5rem;
-  font-weight: 900;
-}
-
-.nav {
-  position: absolute;
-  top:0;
-  right: 0;
-  margin: 2rem;
-  text-align: right;
-}
-
-/* intro component */
+/* intro component*/
 
 .intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.title {
   height: calc(100vh - 8rem);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   max-width: 450px;
   margin: 0 2rem;
 }
 
-.rotate {
-  text-align: center;
-}
-
-.textloop {
+.title {
   font-size: 1.75rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .base {
@@ -132,43 +103,67 @@ body {
   color: #F87060;
 }
 
-.pitch {
-  line-height: 2.5rem;
-  font-size: 1.5rem;
-  max-width: 500px;
+/* main content (contains about and work components)*/
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
 }
 
 /* about component */
 
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 4rem);
+  max-width: 950px;
+  margin: 0 2rem;
+  padding-top: 3rem;
+  text-align: center;
+}
+
 .headshot {
   width: 100%;
   border-radius: 15px;
+  filter: grayscale(100%);
 }
 
 .about-info {
   width: 100%;
+  padding-top: 1rem;
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.resume-link {
+  display: inline;
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #F87060;
+  text-decoration: none;
 }
 
 .resume-link:hover {
   font-weight: 900;
 }
 
-.resume-link {
-  text-decoration: none;
-  display: inline;
-  color: #F87060;
-  font-size: 1.75rem;
-  font-weight: 500;
-}
-
 /* work component */
 
-.project-list {
-  display: grid;
-  grid-template-columns: 1fr;
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: calc(100% - 4rem);
+  max-width: 950px;
+  padding-bottom: 3rem;
+  margin: 2rem 2rem 0 2rem;
+  text-align: center;
 }
 
 .project-wrapper {
@@ -179,78 +174,73 @@ body {
   width: 100%;
 }
 
-.project-expand {
-  width: 100%;
-  margin-bottom: 2rem;
-}
-
-.swaps:hover,
-.space:hover,
-.challenge:hover {
-  cursor: pointer;
-}
-.swaps:hover .thumbnail,
-.space:hover .thumbnail,
-.challenge:hover .thumbnail {
-  background-color: rgba(248, 112, 96, .8);
-}
+/* collapsed project view */
 
 .swaps {
-  background: url("swaps-pic.jpg") no-repeat center;
-  background-size: cover;
   position: relative;
   width: 100%;
   height: 250px;
-  border-radius: 10px;
   margin: 2rem;
+  border-radius: 10px;
+  background: url("swaps-pic.jpg") no-repeat center;
+  background-size: cover;
 }
 
 .space {
-  background: url("wonder-pic.jpg") no-repeat center;
-  background-size: cover;
   position: relative;
   width: 100%;
   height: 250px;
-  border-radius: 10px;
   margin: 2rem;
+  border-radius: 10px;
+  background: url("wonder-pic.jpg") no-repeat center;
+  background-size: cover;
 }
 
 .challenge {
-  background: url("challenge-pic.jpg") no-repeat center;
-  background-size: cover;
   position: relative;
   width: 100%;
   height: 250px;
-  border-radius: 10px;
   margin: 2rem;
+  border-radius: 10px;
+  background: url("challenge-pic.jpg") no-repeat center;
+  background-size: cover;
 }
 
 .thumbnail {
   position: absolute;
-  background-color: rgba(248, 112, 96, .5);
-  color: #F4F4F4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: inherit;
   height: inherit;
   padding: 1rem 2rem;
   font-size: 2rem;
   font-weight: 500;
+  color: #fff;
   text-decoration: none;
-  box-shadow: 4px 4px 4px 0px #ccc;
   border-radius: 10px;
+  background-color: rgba(248, 112, 96, .7);
+  box-shadow: 4px 4px 4px 0px #000;
+}
+
+.swaps:hover .thumbnail,
+.space:hover .thumbnail,
+.challenge:hover .thumbnail {
+  background-color: rgba(248, 112, 96, .9);
+  cursor: pointer;
+}
+
+/* expanded project view */
+
+.project-expand {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.project-des {
-  line-height: 1.75rem;
-  font-size: 1.25rem;
-  text-align: center;
-  margin-block-end: 0;
-}
-
-.project-info {
+  flex-direction: column;
   width: 100%;
+  margin-bottom: 2rem;
+}
+
+.reverse {
+  flex-direction: column-reverse;
 }
 
 .project-img {
@@ -262,30 +252,36 @@ body {
   width: 100%;
 }
 
-.visit-site-button:hover, .view-code-button:hover {
-  cursor: pointer;
+.project-des {
+  line-height: 1.75rem;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-block-end: 0;
 }
 
-.visit-site-button, .view-code-button {
-  background-color: rgba(248, 112, 96);
+.project-button {
+  flex: 1;
   padding: .5rem 1rem;
+  margin-top: 1.25rem;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: bold;
   color: #F4F4F4;
   outline: none;
   border: none;
-  box-shadow: 4px 4px 4px 0px #ccc;
+  box-shadow: 2px 2px 2px 0px #000;
   border-radius: 10px;
-  margin-top: 1.25rem;
-  flex: 1;
+  background-color: rgba(248, 112, 96);
 }
 
-.visit-site-link, .view-code-link {
+.project-button:hover {
+  cursor: pointer;
+}
+
+.project-link {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
-
 
 /* Media Queries */
 
@@ -295,15 +291,19 @@ body {
     font-size: 1.75rem;
   }
 
-  .textloop, .name {
+  .title, .name {
     font-size: 2rem;
+  }
+
+  .about-info {
+    padding-top: 0;
   }
 
   .project-buttons {
     display: flex;
   }
 
-  .visit-site-button {
+  .project-button {
     margin-right: 1rem;
   }
 
@@ -311,7 +311,7 @@ body {
 
 @media (min-width: 650px) {
 
-  .textloop {
+  .title {
     font-size: 2.5rem;
   }
 
@@ -325,7 +325,7 @@ body {
   }
 
   .project-expand {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
