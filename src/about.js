@@ -4,7 +4,7 @@ const About = props => (
   <div className="about"  id="about">
     <img
       className="headshot"
-      src="https://getsimple.space/Landing/brooklyn.jpg"
+      src="/headshot.jpg"
       alt="Headshot of Brooklyn Rauckman"
     />
     <div className="about-info">
