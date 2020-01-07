@@ -4,7 +4,7 @@ const projects = [
     title: "Sustainable Swaps",
     app: "https://confident-euler-0c7809.netlify.com/",
     code: "https://github.com/brooklynrauckman/sustainable-swaps",
-    thumbnail: "../swaps-shot.png",
+    thumbnail: "/swaps-shot.png",
     caption:
       "Search for sustainable swaps. See how much you could save. Add swaps to your bag and share the link with your friends.",
     tools: "HTML, CSS, JS, React, Netlify",
@@ -15,7 +15,7 @@ const projects = [
     app: "https://competent-rosalind-8f9dcf.netlify.com/",
     code: "https://github.com/brooklynrauckman/wonder",
     thumbnail:
-      "../wonder-shot.png",
+      "/wonder-shot.png",
     caption:
       "Explore mind-blowing comparisons involving objects in outer space. Add your name to the guest galaxy, and see who else has joined.",
     tools: "HTML, CSS, JS, React, Node, Express, ElephantSQL, Netlify, Heroku",
@@ -25,7 +25,7 @@ const projects = [
     title: "Challenge By Choice",
     app: "https://reverent-mcclintock-1d3ef5.netlify.com/",
     code: "https://github.com/brooklynrauckman/challenge-by-choice",
-    thumbnail: "../challenge-shot.png",
+    thumbnail: "/challenge-shot.png",
     caption:
       "This is a flexible goal tracking app. Users can log in with google, add custom challenges, and mark challanges as acheived.",
     tools: "HTML, CSS, JS, React, Firebase, Netlify",
