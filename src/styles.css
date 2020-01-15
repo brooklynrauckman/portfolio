@@ -206,6 +206,16 @@ body {
   background-size: cover;
 }
 
+.freedom {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  margin: 2rem;
+  border-radius: 10px;
+  background: url("/freedom-pic-min.jpg") no-repeat center;
+  background-size: cover;
+}
+
 .thumbnail {
   position: absolute;
   display: flex;
@@ -225,7 +235,8 @@ body {
 
 .swaps:hover .thumbnail,
 .space:hover .thumbnail,
-.challenge:hover .thumbnail {
+.challenge:hover .thumbnail,
+.freedom:hover .thumbnail {
   background-color: rgba(248, 112, 96, .9);
   cursor: pointer;
 }

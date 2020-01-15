@@ -27,9 +27,19 @@ const projects = [
     code: "https://github.com/brooklynrauckman/challenge-by-choice",
     thumbnail: "/challenge-shot.png",
     caption:
-      "This is a flexible goal tracking app. Users can log in with google, add custom challenges, and mark challanges as acheived.",
+      "This is a flexible goal tracking app. Sign-in with google, add custom challenges, and mark challanges as acheived.",
     tools: "HTML, CSS, JS, React, Firebase, Netlify",
     id: "challenge"
+  },
+  {
+    title: "Freedom Age",
+    app: "https://friendly-lewin-7b02bf.netlify.com/",
+    code: "https://github.com/brooklynrauckman/freedom",
+    thumbnail: "/freedom-shot.png",
+    caption:
+      "See if you are on track to retire early. Experiment with differnt scenarios to see what it would take.",
+    tools: "HTML, CSS, JS, React, Netlify",
+    id: "freedom"
   }
 ];
 

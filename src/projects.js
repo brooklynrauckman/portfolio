@@ -6,10 +6,12 @@ const Projects = () => {
 const [swapsToggle, updateSwapsToggle] = useState(false);
 const [spaceToggle, updateSpaceToggle] = useState(false);
 const [challengeToggle, updateChallengeToggle] = useState(false);
+const [freedomToggle, updateFreedomToggle] = useState(false);
 
 const swaps = config.projects[0];
 const space = config.projects[1];
 const challenge = config.projects[2];
+const freedom = config.projects[3];
 
 return(
   <div className="projects" id="work">
@@ -111,6 +113,36 @@ return(
       : ''}
     </div>
 
+    <div className="project-wrapper">
+      <a href={`#${freedom.id}`} className={freedom.id}>
+        <div className="thumbnail" id={freedom.id} onClick={() => updateFreedomToggle(!freedomToggle)}>
+          {freedom.title}
+        </div>
+      </a>
+      {freedomToggle ?
+      <div className="project-expand">
+        <a href={freedom.app} target="blank" className="img-link">
+          <img className="project-img" src={freedom.thumbnail} alt="project thumbnail" />
+        </a>
+        <div className="project-info">
+          <p className="project-des">
+            {freedom.caption}
+          </p>
+          <p className="project-des">
+            <b>Tools:</b> {freedom.tools}
+          </p>
+          <div className="project-buttons">
+            <a className="project-link" href={freedom.app} target="blank">
+              <button className="project-button">visit site</button>
+            </a>
+            <a className="project-link" href={freedom.code} target="blank">
+              <button className="project-button">view code</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      : ''}
+    </div>
 
   </div>
 );
