@@ -33,7 +33,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  background-image: url("/gray-texture-min.jpg");
+  background-color: inherit;
   background-size: cover;
 }
 
@@ -87,7 +87,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 8rem);
+  height: calc(100vh - 9rem);
   max-width: 450px;
   margin: 0 2rem;
 }
