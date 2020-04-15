@@ -37,7 +37,7 @@ const projects = [
     code: "https://github.com/brooklynrauckman/freedom",
     thumbnail: "/freedom-shot.png",
     caption:
-      "See if you are on track to retire early. Experiment with differnt scenarios to see what it would take.",
+      "See if you are on track to retire early. Experiment with different scenarios to see what it would take.",
     tools: "HTML, CSS, JS, React, Netlify",
     id: "freedom"
   }
