@@ -1,24 +1,17 @@
 import React from "react";
-import { render } from "react-dom";
-import { BrowserRouter, Route } from "react-router-dom";
-import About from "./about.js";
-import App from "./app.js";
-import "./styles.css";
-import ScrollToTop from "./scroll.js";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
 
-render(
-  <BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
-    <ScrollToTop />
-    <Route
-      exact
-      path="/"
-      render={() => <App />}
-    />
-    <Route
-      exact
-      path="/about"
-      render={() => <About />}
-    />
-  </BrowserRouter>,
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById("root")
 );
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();

@@ -1,27 +1,56 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import * as styles from "./nav-styles.js";
 
-const Nav = () => {
-
-const [menuToggle, updateMenuToggle] = useState(false);
-
-return(
-  <div className="navBar">
-    <h1 className="name">Brooklyn<br />Rauckman</h1>
-      {menuToggle === true
-      ? <nav className="nav-links">
-          <svg onClick={()=> updateMenuToggle(!menuToggle)}
-               className="menu-arrow" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg>
-          <a href="#about">
-            <div className="about-link">about</div>
-          </a>
-          <a href="#work">
-            <div className="portfolio-link">portfolio</div>
-          </a>
-        </nav>
-      : <svg onClick={()=> updateMenuToggle(!menuToggle)}
-             className="menu-arrow" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg>
-      }
-  </div>
-)};
+function Nav() {
+  const [menu, toggleMenu] = useState(false);
+  return (
+    <div css={styles.nav}>
+      <img css={styles.navLogo} src="/logo.svg" alt="logo" />
+      <div css={styles.navLinks}>
+        <a href="#projects" css={styles.navLink}>
+          Projects
+        </a>
+        <a href="#skills" css={styles.navLink}>
+          Skills
+        </a>
+        <a href="#about" css={styles.navLink}>
+          About
+        </a>
+      </div>
+      <div css={styles.mobileNavRight}>
+        <a
+          href="https://www.linkedin.com/in/brooklyn-rauckman-21514390/"
+          target="blank"
+          css={styles.hireMeLink}
+        >
+          <button css={styles.hireMeButton}>Hire Me</button>
+        </a>
+        <div css={styles.menu} onClick={() => toggleMenu(!menu)}>
+          <img src="/menu.svg" alt="" />
+        </div>
+        <div css={styles.menuItems(menu)}>
+          <img css={styles.navLogo} src="/logo.svg" alt="logo" />
+          <div>
+            <a href="#projects" css={styles.menuLink}>
+              Projects
+            </a>
+            <a href="#skills" css={styles.menuLink}>
+              Skills
+            </a>
+            <a href="#about" css={styles.menuLink}>
+              About
+            </a>
+          </div>
+          <img
+            css={styles.close}
+            src="/close.svg"
+            alt=""
+            onClick={() => toggleMenu(!menu)}
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default Nav;

@@ -1,25 +1,25 @@
 import React from "react";
-import Nav from "./nav.js";
-import Intro from "./intro.js";
-import About from "./about.js";
-import Projects from "./projects.js";
+import * as styles from "./app-styles.js";
+import Intro from "./Intro.js";
+import Projects from "./Projects.js";
+import Skills from "./Skills.js";
+import About from "./About.js";
+import Nav from "./Nav";
 
-const App = () => {
+function App() {
+  return (
+    <div css={styles.wrapper}>
+      <img src="/triangle.png" css={styles.triangleGradient} alt="" />
 
-  return(
-    <React.Fragment>
-      <div className="hero">
-        <Nav />
-        <div className="intro">
-          <Intro />
-        </div>
-      </div>
-      <div className="content">
-        <About />
+      <Nav />
+      <div css={styles.app}>
+        <Intro />
         <Projects />
+        <Skills />
+        <About />
       </div>
-    </React.Fragment>
-    );
-  }
+    </div>
+  );
+}
 
 export default App;

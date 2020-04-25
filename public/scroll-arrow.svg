@@ -1,0 +1,17 @@
+<svg
+  viewBox="0 0 251 251"
+  xmlns="http://www.w3.org/2000/svg"
+  fill-rule="evenodd"
+  clip-rule="evenodd"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-miterlimit="1.5"
+>
+  <path fill="none" d="M0 0h250.02v250.02H0z" />
+  <path
+    d="M180.524 238.239L67.77 125.588 181.544 11.763"
+    fill="none"
+    stroke="#021156"
+    stroke-width="20.40776"
+  />
+</svg>
