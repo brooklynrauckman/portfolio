@@ -319,7 +319,10 @@ export const squareGradientTwo = css`
 `;
 
 export const video = css`
-  height: 530px;
+  height: 100%;
+  max-height: 530px;
+  width: 100%;
+  align-self: start;
   background-color: white;
   border-radius: 13px;
   outline: none;
