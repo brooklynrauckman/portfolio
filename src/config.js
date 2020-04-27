@@ -67,7 +67,7 @@ const projects = [
     preview: "/challenge.png",
     thumbnail: "/challenge-shot.png",
     caption:
-      "This is a flexible goal tracking app. Sign-in with google, add custom challenges, and mark challanges as acheived.",
+      "This is a flexible goal tracking app. Sign-in with google, add custom challenges, and mark challenges as achieved.",
     tools: [
       "/html.svg",
       "/css.svg",
