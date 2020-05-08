@@ -13,6 +13,7 @@ const projects = [
       "/javascript.svg",
       "/react.svg",
       "/firebase.svg",
+      "/redux.svg",
       "/git.svg",
     ],
     media: "video",
@@ -54,7 +55,6 @@ const projects = [
       "/node.svg",
       "/postgresql.svg",
       "/netlify.svg",
-      "/heroku.svg",
       "/git.svg",
     ],
     media: "image",
@@ -98,6 +98,25 @@ const projects = [
     ],
     media: "image",
     id: "freedom",
+  },
+  {
+    title: "ATSA Practice",
+    app: "https://fervent-swanson-6d50df.netlify.app",
+    code: "https://github.com/brooklynrauckman/atc-app",
+    preview: "/atc.png",
+    thumbnail: "/atc-shot.png",
+    caption:
+      "These activities are designed as preparation for the ATSA. However, they are also just a fun way to test your memorization, focus, mental math, and speed.",
+    tools: [
+      "/html.svg",
+      "/css.svg",
+      "/javascript.svg",
+      "/react.svg",
+      "/netlify.svg",
+      "/git.svg",
+    ],
+    media: "image",
+    id: "atc",
   },
 ];
 
@@ -151,10 +170,10 @@ const skills = [
     id: "Firebase",
   },
   {
-    title: "Heroku",
-    link: "https://www.heroku.com/",
-    icon: "/heroku.svg",
-    id: "Heroku",
+    title: "Redux",
+    link: "https://redux.js.org/",
+    icon: "/redux.svg",
+    id: "Redux",
   },
   {
     title: "Git",
