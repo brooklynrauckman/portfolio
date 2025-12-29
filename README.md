@@ -1,68 +1,109 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Portfolio
+
+A modern, bold portfolio website built with Next.js, TypeScript, and Tailwind CSS.
+
+## Tech Stack
+
+- **Next.js 14+** - React framework with App Router
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Utility-first CSS framework
+- **React** - UI library
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Run the development server:
+
+```bash
+npm run dev
+```
+
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Available Scripts
 
-In the project directory, you can run:
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint
 
-### `npm start`
+## Project Structure
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+portfolio/
+├── app/              # Next.js app directory
+│   ├── layout.tsx    # Root layout
+│   ├── page.tsx      # Home page
+│   └── globals.css    # Global styles
+├── components/        # React components
+│   ├── Nav.tsx
+│   ├── Intro.tsx
+│   ├── Project.tsx
+│   ├── Skills.tsx
+│   └── About.tsx
+├── lib/              # Utilities
+│   └── config.ts     # Project & skills data
+└── public/           # Static assets
+```
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Deployment to Vercel
 
-### `npm test`
+This project is optimized for Vercel deployment. Here are two ways to deploy:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Option 1: Deploy via Vercel Dashboard (Recommended)
 
-### `npm run build`
+1. Push your code to GitHub
+2. Go to [vercel.com](https://vercel.com) and sign in
+3. Click "Add New Project"
+4. Import your GitHub repository
+5. Vercel will automatically detect Next.js and configure everything
+6. Click "Deploy"
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+That's it! Your site will be live in minutes.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Option 2: Deploy via Vercel CLI
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Install Vercel CLI:
 
-### `npm run eject`
+```bash
+npm i -g vercel
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. In your project directory, run:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+vercel
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3. Follow the prompts to link your project
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+4. For production deployment:
 
-## Learn More
+```bash
+vercel --prod
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Environment Variables
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+If you need any environment variables, add them in the Vercel dashboard under Project Settings → Environment Variables.
 
-### Code Splitting
+### Custom Domain
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+You can add a custom domain in the Vercel dashboard under Project Settings → Domains.
 
-### Analyzing the Bundle Size
+## Notes
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Add a screenshot of Habit Challenge project to `/public/habit-challenge.png` and update the thumbnail path in `lib/config.ts`
+- Skill icons for Laravel, PHP, Vercel, Figma, TypeScript, Next.js, and Tailwind are using placeholder icons. Replace with actual icons when available.
