@@ -22,11 +22,12 @@ export default function Skills() {
               rel="noopener noreferrer"
               className="group flex flex-col items-center p-6 bg-gray-900 rounded-xl hover:bg-gray-800 transition-all transform hover:scale-105 hover:shadow-lg hover:shadow-primary-500/20"
             >
-              <div className="w-16 h-16 md:w-20 md:h-20 mb-4 flex items-center justify-center bg-gray-800 rounded-lg group-hover:bg-gray-700 transition-colors">
+              <div className="w-16 h-16 md:w-20 md:h-20 mb-4 flex items-center justify-center bg-transparent rounded-lg p-2">
                 <img
                   src={skill.icon}
                   alt={skill.title}
-                  className="w-12 h-12 md:w-14 md:h-14"
+                  className="w-full h-full object-contain"
+                  style={{ mixBlendMode: 'normal' }}
                 />
               </div>
               <p className="text-sm md:text-base font-medium text-gray-300 group-hover:text-primary-400 transition-colors text-center">

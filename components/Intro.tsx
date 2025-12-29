@@ -1,7 +1,6 @@
-
 export default function Intro() {
   return (
-    <section className="min-h-screen flex items-center justify-center relative pt-20 md:pt-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center relative px-4 sm:px-6 lg:px-8 overflow-hidden pb-20 md:pb-32">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"></div>
       <div className="absolute top-20 right-20 w-96 h-96 bg-primary-500/20 rounded-full blur-3xl"></div>
@@ -9,14 +8,38 @@ export default function Intro() {
 
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
         <div className="space-y-8">
-          <div className="w-3 h-3 bg-primary-400 rounded-full animate-pulse"></div>
           <h1 className="text-5xl md:text-7xl font-black text-white leading-tight">
-            Bringing ideas to{' '}
-            <span className="text-gradient">life</span>
+            Bringing ideas to <span className="text-gradient">life</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-2xl">
-            Hi, I'm Brooklyn! I'm a <span className="text-primary-400 font-semibold">Full-stack Software Engineer</span> with a background in teaching, coaching, and organizing. I enjoy simplifying complex problems and building solutions that make a difference. I'm a lifelong learner, always ready to take on new challenges.
-          </p>
+          <div className="space-y-6 text-xl md:text-2xl text-gray-300 leading-relaxed">
+            <p>
+              Hi, I'm Brooklyn! I'm a{" "}
+              <span className="text-primary-400 font-semibold">
+                Full Stack Engineer
+              </span>{" "}
+              with a background in teaching, coaching, and organizing.
+            </p>
+            <p>
+              My passion for math, solving problems, and creating things led me
+              to engineering. I love to simplify and optimize workflows—both in
+              code and in life.
+            </p>
+            <p>
+              Looking ahead, I'm excited about the opportunity to work as a tech
+              partner, building digital solutions and organized systems that
+              help businesses and individuals thrive.
+            </p>
+          </div>
+          <div className="pt-4">
+            <a
+              href="https://www.linkedin.com/in/brooklyn-rauckman-21514390/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-4 bg-gradient-to-r from-primary-500 to-accent-500 text-white font-semibold rounded-lg hover:from-primary-600 hover:to-accent-600 transition-all transform hover:scale-105 text-lg"
+            >
+              Let's Connect
+            </a>
+          </div>
         </div>
         <div className="relative">
           <div className="relative z-10">
@@ -32,4 +55,3 @@ export default function Intro() {
     </section>
   );
 }
-

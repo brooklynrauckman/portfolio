@@ -22,13 +22,8 @@ export const projects: Project[] = [
     code: "https://github.com/brooklynrauckman/habit-contract.git",
     thumbnail: "/challenge-shot.png", // Placeholder - replace with habit-challenge screenshot
     caption:
-      "A web app for creating personalized habit challenges with daily habits, designated skips, make-ups, and punishments. Track your progress and earn final rewards or face penalties based on challenge completion. Built with modern web technologies and designed to help you build better habits through accountability.",
-    tools: [
-      "/react.svg",
-      "/javascript.svg",
-      "/css.svg",
-      "/html.svg",
-    ],
+      "A web app for creating personalized challenges with daily habits, designated skips, make-ups, and punishments. Track your progress and earn final rewards or face penalties based on challenge completion. Built with modern web technologies and designed to help you build better habits through accountability.",
+    tools: ["/react.svg", "/javascript.svg", "/css.svg", "/html.svg"],
     id: "habit-challenge",
   },
 ];
@@ -43,7 +38,7 @@ export const skills: Skill[] = [
   {
     title: "TypeScript",
     link: "https://www.typescriptlang.org/",
-    icon: "/javascript.svg",
+    icon: "/typescript.png",
     id: "TypeScript",
   },
   {
@@ -67,7 +62,7 @@ export const skills: Skill[] = [
   {
     title: "Next.js",
     link: "https://nextjs.org/",
-    icon: "/react.svg",
+    icon: "/nextjs.svg",
     id: "Next.js",
   },
   {
@@ -89,6 +84,12 @@ export const skills: Skill[] = [
     id: "Postgresql",
   },
   {
+    title: "MySQL",
+    link: "https://www.mysql.com/",
+    icon: "/mysql.png",
+    id: "MySQL",
+  },
+  {
     title: "Firebase",
     link: "https://firebase.google.com/",
     icon: "/firebase.svg",
@@ -103,13 +104,13 @@ export const skills: Skill[] = [
   {
     title: "Laravel",
     link: "https://laravel.com/",
-    icon: "/node.svg",
+    icon: "/laravel.png",
     id: "Laravel",
   },
   {
     title: "PHP",
     link: "https://www.php.net/",
-    icon: "/node.svg",
+    icon: "/php.png",
     id: "PHP",
   },
   {
@@ -127,19 +128,19 @@ export const skills: Skill[] = [
   {
     title: "Cursor",
     link: "https://cursor.sh/",
-    icon: "/git.svg",
+    icon: "/cursor.png",
     id: "Cursor",
   },
   {
     title: "Google Data Studio",
     link: "https://datastudio.google.com/",
-    icon: "/css.svg",
+    icon: "/gds.png",
     id: "GoogleDataStudio",
   },
   {
     title: "n8n",
     link: "https://n8n.io/",
-    icon: "/node.svg",
+    icon: "/n8n.webp",
     id: "n8n",
   },
   {
@@ -149,4 +150,3 @@ export const skills: Skill[] = [
     id: "Git",
   },
 ];
-

@@ -52,7 +52,6 @@ portfolio/
 │   ├── Intro.tsx
 │   ├── Project.tsx
 │   ├── Skills.tsx
-│   └── About.tsx
 ├── lib/              # Utilities
 │   └── config.ts     # Project & skills data
 └── public/           # Static assets
